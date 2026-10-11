@@ -1,0 +1,15 @@
+﻿# Airflow
+logs/
+.env
+airflow.cfg
+__pycache__/
+*.pyc
+
+# Datos locales
+data/*.duckdb
+data/*.duckdb.wal
+
+# Sistema y editor
+.DS_Store
+Thumbs.db
+.vscode/
