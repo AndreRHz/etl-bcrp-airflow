@@ -23,7 +23,7 @@ def extraer_datos():
     return resultado
 
 def transformar_datos(ti):
-    datos = ti.xcom_pull(task_ids="extraer")  # {columna: [periodos...]}
+    datos = ti.xcom_pull(task_ids="extraer")
 
     filas_por_fecha = {}
     for columna, periodos in datos.items():
